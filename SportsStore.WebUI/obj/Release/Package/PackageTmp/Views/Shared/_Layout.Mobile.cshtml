@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+     
+    <!--<script src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css" /> -->
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"
+            integrity="sha256-2+LznWeWgL7AJ1ciaIG5rFP7GKemzzl+K75tRyTByOE="
+            crossorigin="anonymous"></script>
+    <script src="~/Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="~/Content/jquery.mobile-1.4.5.min.css" />
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h3>SportsStore</h3>
+            @Html.Action("Menu", "Nav")
+        </div>
+         <div data-role="content">
+             <ul data-role="listview" data-inset="false" data-theme="b">
+                 @RenderBody()
+             </ul>
+         </div>
+
+    </div>
+</body>
+</html>
